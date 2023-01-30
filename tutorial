@@ -1,0 +1,116 @@
+# CIS115 Tutorial
+# Ch3: Decision Structures and Boolean Logic
+
+
+
+# ------- Problem #1: if statement -------
+# Step 1: Ask the user to input whether it is cold outside or not (Yes or No)
+weather = str(input('is it cold or hot outside?\n'))
+
+# Step 2: If it is cold, output "Wear a coat". Otherwise, do nothing.
+if weather =='cold':
+    print('Please wear a coat as its cold')
+
+
+# ------- Problem #2a: Relational Operators -------
+x = 1
+y = 5
+z = 2
+
+# print(x > y)
+# print(z <= y)
+
+
+# ------- Problem #2b
+# Ask the user to input their grades for the Ch1 and Ch2 quizzes
+# and output the quiz with the highest grade
+ch1 = int(input('Please input the grade of your ch1 quiz\n'))
+ch2 = int(input('Please input the grade of your ch2 quiz\n'))
+if ch1<ch2:
+    print(ch2)
+else:
+    print(ch1)
+
+
+
+
+
+
+# ------- Problem #3a: Equality/Inequality Operators -------
+a = 2
+b = 4
+c = 4
+
+# print(a == b)
+# print(b == c)
+# print(a != b)
+# print(a != c)
+
+
+# ------- Problem #3b
+# Ask the user to input their password.
+# If their password is correct, output "Successful login". 
+
+password='bananasundae'
+user = input('please enter your password\n')
+if user==password:
+    print('successful login')
+
+
+
+
+
+
+# ------- Problem #4: if-else statement -------
+# Step 1: Input a user's age (hint: convert to an integer)
+age = int(input('Please input your age\n'))
+
+
+
+# Step 2: If user is less than 18, output "Not eligible to vote."
+# Otherwise, output "Voter!"
+if age >=18:
+    print('Voter!')
+else:
+    print('Not elgible to vote')
+
+
+
+
+# ------- Problem #5: string comparisons -------
+# Step 1: Input a word.
+# Step #2: If the word is equal to "JACKPOT", output "You win!". Otherwise, output "You lose."
+word = input('Please input a word')
+if word in ['jackpot','Jackpot']:
+    print('You Win!!')
+else:
+    print('You Lose!!')
+
+
+# ------- Problem #6: Nested if-else statements -------
+# Step 1: Input a person's age and input if they have a driver's license (Yes or No)
+print('your age is',age)
+id_ = input('do you have a drivers license?\n')
+
+
+
+# Step 2: If person's age >= 16
+if age >=16:
+    if id_ in['yes','Yes']:
+        print('elgible to drive')
+    else:
+            print('you are not able to drive')
+elif age<16:
+    print('too young')
+
+    print('not elgible to drive')
+
+    # Step 3: If person has a driver's license, output "Eligible to drive"
+
+
+    # Step 4: Otherwise, output "No license"
+
+
+# Step 5: Otherwise, output "Too young"
+
+
